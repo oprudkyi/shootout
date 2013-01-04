@@ -23,7 +23,7 @@ while(true) {
 	$v = gmp_div_q($n2, $d);
 	if(gmp_cmp($u, $v) == 0) {
 		echo gmp_strval($u);
-		$i++;
+		++$i;
 		if($i % 10 == 0) {
 			echo "\t:" , $i , "\n";
 		}
@@ -46,7 +46,7 @@ while(true) {
 		$u = gmp_mul($n2, $k + 2);
 		$n2 = gmp_add($w, $u);
 		$d = gmp_mul($d, $k2 + 1);
-		$k++;
+		++$k;
 	}
 }
 if($i % 10 != 0) {
