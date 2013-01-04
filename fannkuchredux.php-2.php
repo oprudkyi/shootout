@@ -56,7 +56,7 @@ do {
 				printf("%d\nPfannkuchen(%d) = %d\n", $checksum, $n, $maxflips);// Out of permutations.
 				return;
 			}
-			$s[$i] = $i;
+			$sx = $i;
 			// Rotate 0<-...<-i+1.
 			$t = $p[0]; 
 			for($j=0; $j<=$i; ){ $p[$j++] = $p[$j]; } 
